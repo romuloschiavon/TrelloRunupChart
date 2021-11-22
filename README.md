@@ -34,6 +34,7 @@ to:
 ```
 diaAtual = datetime.now()
 ```
+and remove lines 74-84 (date inputs)
 
 ## Running
 To run it, simply use any bash to run main.py. If everything is set-up correctly you should see no errors and a historic.json should be created with the data gathered.
