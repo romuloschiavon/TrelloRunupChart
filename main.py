@@ -33,7 +33,7 @@ def webScraping(tabelaID):
 url = False
 
 if not url:
-    url = "https://trello.com/b/0w2jL4Yc/404-trello-not-found"
+    url = "trello url"
 
 option = Options()
 option.headless = True
