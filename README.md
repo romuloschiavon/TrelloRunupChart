@@ -16,9 +16,9 @@ Also, rememember to change the URL inside the main.py to your trello board URL
 
 ### Finding the Lists
 I used a webscraper to scrape the cards content, but the index of those lists are hard-coded (see main.py line 50-52), the webScraping(listID) function requires the listID.
-To find your lists ID simply count how many lists there are, and their index should be where they're. So change their ID's on code.
+To find your lists ID simply count how many lists there are, and their index should be where they are. So change their ID's on code.
 Ex:
-3 lists, 1: to-do, 2: doing, 3: done, 4: Run-upChart
+4 lists, 1: to-do, 2: doing, 3: done, 4: Run-upChart
 ![Example2](https://user-images.githubusercontent.com/49570622/142889994-cd145cad-227c-4ddc-ba39-eace0b444754.png)
 
 ### Trello API SETUP
@@ -34,7 +34,7 @@ to:
 ```
 diaAtual = datetime.now()
 ```
-and remove lines 74-84 (date inputs)
+and remove lines 74-84 (date inputs), but i recommend you saying the date. It's effortless.
 
 ### Graph generation
 The Old data is stores inside historico.json, so if you already gathered data manually, insert it by hand into historico.json or create a code to insert it for you.
