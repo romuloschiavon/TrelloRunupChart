@@ -36,5 +36,9 @@ diaAtual = datetime.now()
 ```
 and remove lines 74-84 (date inputs)
 
+### Graph generation
+The Old data is stores inside historico.json, so if you already gathered data manually, insert it by hand into historico.json or create a code to insert it for you.
+After gathering new data it will automatically append them there, and i'll spare you the issue of manual appends.
+
 ## Running
 To run it, simply use any bash to run main.py. If everything is set-up correctly you should see no errors and a historic.json should be created with the data gathered.
