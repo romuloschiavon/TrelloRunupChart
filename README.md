@@ -22,7 +22,7 @@ Ex:
 ![Example2](https://user-images.githubusercontent.com/49570622/142889994-cd145cad-227c-4ddc-ba39-eace0b444754.png)
 
 ### Trello API SETUP
-To use the imageToTrello automation you'll need api tokens/auth to upload image directly to a trello card. Remember to change the card ID and the necessary API keys in the early lines of the main.py code.
+To use the imageToTrello automation you'll need api tokens/auth to upload image directly to a trello card. Remember to change the card ID and the necessary API keys in keys.py
 If you never used Trello API, google the trello doc or click [here](https://developer.atlassian.com/cloud/trello/).
 
 ### Options
@@ -39,6 +39,12 @@ and remove lines 74-84 (date inputs)
 ### Graph generation
 The Old data is stores inside historico.json, so if you already gathered data manually, insert it by hand into historico.json or create a code to insert it for you.
 After gathering new data it will automatically append them there, and i'll spare you the issue of manual appends.
+
+You will also need to insert the CardID in keys.py. To find the cardID, open the card that you want to insert the runup chart, the ID is in the link, ex:
+```
+https://trello.com/c/a37YCykl/exampleExampleexample
+```
+The CardID of this link is "a37YCykl"
 
 ## Running
 To run it, simply use any bash to run main.py. If everything is set-up correctly you should see no errors and a historic.json should be created with the data gathered.
