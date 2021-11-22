@@ -23,7 +23,7 @@ Ex:
 
 ### Trello API SETUP
 To use the imageToTrello automation you'll need api tokens/auth to upload image directly to a trello card. Remember to change the card ID and the necessary API keys in keys.py
-If you never used Trello API, google the trello doc or click [here](https://developer.atlassian.com/cloud/trello/).
+If you never used Trello API, google the trello doc or click [here](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/).
 
 ### Options
 Everytime you run the code it will ask you the date that you want to associate with the data retrieved. If you don't want that. change line 85 from:
