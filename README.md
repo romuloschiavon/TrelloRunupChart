@@ -47,4 +47,4 @@ https://trello.com/c/a37YCykl/exampleExampleexample
 The CardID of this link is "a37YCykl"
 
 ## Running
-To run it, simply use any bash to run main.py. If everything is set-up correctly you should see no errors and a historic.json should be created with the data gathered.
+To run it, simply use any bash to run main.py. If everything is set-up correctly you should see no errors and a historico.json should be created with the data gathered.
