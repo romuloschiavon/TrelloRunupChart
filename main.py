@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from datetime import datetime
 from matplotlib import pyplot as plt
+from matplotlib import lines as lns
 import keys
 from imageToTrello import fileToCard
 
@@ -82,7 +83,8 @@ if not mes:
     mes = str(input("mes: "))
 if not ano:
     ano = str(input("ano: "))
-diaAtual = datetime(int(ano), int(mes), int(dia)) 
+    
+diaAtual = datetime(int(ano), int(mes), int(dia)).strftime('%d/%m/%Y') 
 
 data["To-Do"].append(f"{somas[0]}")
 data["Doing"].append(f"{somas[1]}")
@@ -113,12 +115,14 @@ for value in data['Done']:
 plt.bar(xAxis, toDoValues, w, label="To-Do")
 plt.bar(xAxis+w, doingValues, w, label="Doing")
 plt.bar(xAxis+w*2, doneValues, w, label="Done")
+lns.Line2D(xAxis+w*2, doneValues, linewidth=0.75, label="Done")
+
 
 plt.xlabel("Data")
 plt.ylabel("Pontos")
 plt.title("Pontos por tempo")
 
-plt.xticks(xAxis+w, data['Dates'])
+plt.xticks(xAxis+w, data['Dates'], rotation=45)
 plt.tight_layout()
 plt.legend()
 plt.savefig('./images/graph.jpg')
