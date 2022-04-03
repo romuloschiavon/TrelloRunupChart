@@ -8,10 +8,10 @@ from matplotlib import lines as lns
 import keys
 from imageToTrello import fileToCard
 
-key = keys.key
-token = keys.token
-image = keys.imagePATH
-cardid = keys.cardID
+key = keys.key #- CHANGE HERE or in KEYS
+token = keys.token#- CHANGE HERE or in KEYS
+image = keys.imagePATH #- CHANGE HERE or in KEYS
+cardid = keys.cardID #- CHANGE HERE or in KEYS
 
 ###################################################################
 #Pegando os dados dos cartões do trello    
@@ -34,7 +34,7 @@ def webScraping(tabelaID):
 url = False
 
 if not url:
-    url = "https://trello.com/b/0w2jL4Yc/404-trello-not-found"
+    url = "trello url" #- CHANGE HERE
 
 option = Options()
 option.headless = True
@@ -48,9 +48,9 @@ driver.implicitly_wait(3)
 ###################################################################
 etapas = [[],[],[]]
 
-etapas[0] = webScraping(3)
-etapas[1] = webScraping(4) 
-etapas[2] = webScraping(5)
+etapas[0] = webScraping(0) #- CHANGE HERE
+etapas[1] = webScraping(0) #- CHANGE HERE
+etapas[2] = webScraping(0) #- CHANGE HERE
 
 driver.quit()
 
